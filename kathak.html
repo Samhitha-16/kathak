@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="kathak.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <title>Dance Website</title>
+</head>
+
+<body>
+  <section class="header">
+    <nav class="navbar">
+
+      <ul class="nav-list">
+        <div class="logo">
+          <img src="images/kathakNew.png" alt="">
+        </div>
+        <li class="hideOnMobile"><a href="home.html">Home</a></li>
+        <li class="hideOnMobile"><a href="certificates.html">Certificates</a></li>
+        <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+        <li class="hideOnMobile"><a href="events.html">Events</a></li>
+        <li class="hideOnMobile"><a href="journey.html">The Journey</a></li>
+        <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+              viewBox="0 -960 960 960" width="26px" fill="#5f6368">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg></a></li>
+      </ul>
+    </nav>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector('.nav-list-new');
+        sidebar.style.display = 'flex';
+      }
+      function hideSidebar() {
+        const hidebar = document.querySelector('.nav-list-new');
+        hidebar.style.display = 'none';
+      }
+    </script>
+    <nav class="navbar">
+
+      <ul class="nav-list-new">
+        <div class="logo-new">
+          <img src="images/kathakNew.png" alt="">
+        </div>
+        <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+              viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg></a></li>
+        <li><a href="kathak.html"> About Kathak</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="journey.html">The Journey</a></li>
+
+      </ul>
+    </nav>
+    <div class="abt-kathak">
+      <h1>ABOUT KATHAK</h1>
+    </div>
+    <div class="container">
+      <div class="textblock">
+        <h1 class="title">Know About Kathak</h1>
+        <h4 class="sub-title">The beautiful dance form</h4>
+        <p><span>kathak</span> is one of the nine major forms of Indian classical dance. Its origin is attributed to
+          the traveling bards in ancient northern India known as Kathakar ("storyteller"), who communicated stories from
+          the Hindu epics and mythology through dance, songs and music. Its name derives from the Sanskrit word katha
+          which means "story", and kathakar which means "the one who tells a story",<br> or "to do with stories".</p>
+        <p>
+          Stylistically, the Kathak dance form emphasizes rhythmic foot movements, adorned with small bells (Ghungroo)
+          and the movement harmonized to the music. Kathak is found in four distinct forms, called "gharana", named
+          after the cities where the Kathak dance tradition evolved - Jaipur, Benares and Lucknow.
+        </p>
+        <a href="#gharana-description" class="btn">Know more about the Ghanranas</a>
+      </div>
+      <img src="images/abtKathak.jpg" alt="">
+    </div>
+
+  </section>
+  
+    <div id="gharana-description">
+      <h1>GHARANS IN KATHAK</h1>
+      <div class="wrapper">
+        <div class="card">
+          <div class="face front">
+            <img src="images/jaipur.jpg" alt="">
+            <h3>Jaipur Gharana</h3>
+          </div>
+          <div class="face back">
+            <h3>Jaipur Gharana</h3>
+            <p>
+              The gharana is known for its unique layakari (rhythmic aesthetics) and rich repertoire of ragas, especially
+              jod ragas (compound ragas) and sankeerna ragas (mixed ragas)..The Jaipur gayaki, notes are applied in an
+              oblique manner with filigree involving immediately neighbouring notes. Instead of the flat taan, gamak makes
+              the taan spiral into seemingly never-ending cycles.
+            </p>
+            <div class="link">
+              <a href="https://en.wikipedia.org/wiki/Jaipur-Atrauli_gharana">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face front">
+            <img src="images/banaras.jpeg" alt="">
+            <h3>Banaras Gharana</h3>
+          </div>
+          <div class="face back">
+            <h3>Banaras Gharana</h3>
+            <p>
+              Banaras Gharana, a prominent school of Indian classical dance, has its roots in the ancient city of Varanasi,
+              also known as Banaras.It is believed that Banaras Gharana evolved from the fusion of various dance styles,
+              including Kathak, Bharatanatyam, and Manipuri, which were popular in different parts of India.
+              Features of banaras gharana include Graceful movements, Emotive story telling, complex footwork etc.
+            </p>
+            <div class="link">
+              <a href="https://historified.in/2023/03/05/kathak-the-graceful-art-of-banaras-gharana/#:~:text=Banaras%20Gharana%20is%20known%20for,Birju%20Maharaj%2C%20and%20Shovana%20Narayan.">Know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face front">
+            <img src="images/lucknow.jpeg" alt="">
+            <h3>Lucknow Gharana</h3>
+          </div>
+          <div class="face back">
+            <h3>Lucknow Gharana</h3>
+            <p>
+              The Lucknow Gharana of the Kathak traces its origin to Sri Ishwari Prasadji, who was the resident of the
+              Handia Tehsil of Allahabad.The House of Lucknow is the main Gharana of Kathak dance style. In this Gharana,
+              the custom is to dance in small Tukdas (pieces). In these Tukdas, stress is laid on beauty of body parts. In the Tukdas of Tatkar, “Ta Thei Tat Thei ” are danced in many variations and ‘That’ is also
+              expressed in a particular way.
+            </p>
+            <div class="link">
+              <a href="https://www.knocksense.com/lucknow/a-story-of-lucknow-gharana-kathak">Know more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  
+  
+ 
+
+</body>
+
+</html>
